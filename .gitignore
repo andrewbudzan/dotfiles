@@ -1,0 +1,7 @@
+.idea/
+.git/
+.vim/autoload/
+.vim/backup/
+.vim/doc/
+.vim/pack/
+.vim/plugged/

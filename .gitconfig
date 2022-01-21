@@ -1,0 +1,17 @@
+[user]
+	name = andrii budzan
+	email = andrewbudzan@gmail.com
+	username = abudzan
+[core]
+	editor = vim
+[web]
+	browser = brave 
+[credential]
+	helper = cache
+[alias]
+	hist = log --pretty=format:"%h | %s%d [%an]" --graph --date=short
+	logp = log --graph --pretty=format:'%Cred%h%Creset - %Cblue%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[github]
+	user = andrewbudzan
+[init]
+	defaultBranch = main
