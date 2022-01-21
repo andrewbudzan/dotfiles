@@ -1,1 +1,0 @@
-/home/abudzan/projects/dotfiles/.vim/
