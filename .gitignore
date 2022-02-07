@@ -5,4 +5,7 @@
 .vim/doc/
 .vim/pack/
 .vim/plugged/
+.vim/bundle/
 .vim/.*
+*.backup
+*.bkp
