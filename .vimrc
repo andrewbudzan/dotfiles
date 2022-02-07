@@ -15,7 +15,7 @@ set wildmenu  " visual autocomplete for command menu
 " layout {{{
 set cursorline  " highlight current line
 set showcmd  " show command in bottom bat
-set showmode  "
+set showmode
 set showmatch  " highlight braces [{()}]
 set scrolloff=7
 filetype indent on  " load filetype-specific indent files
@@ -27,10 +27,10 @@ set hlsearch  " highlight matches
 " }}}
 
 " Folding {{{
-set foldmethod=indent   " fold based on indent level
+set foldmethod=marker   " fold based on indent level
 set foldnestmax=10      " max 10 depth
 set foldenable          " enable folding
-set foldlevelstart=10   " open most folds by default"
+set foldlevelstart=0   " open most folds by default"
 " space open/closes folds
 nnoremap <space> za
 
