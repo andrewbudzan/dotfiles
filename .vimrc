@@ -31,7 +31,6 @@ set foldmethod=marker   " fold based on indent level
 set foldnestmax=10      " max 10 depth
 set foldenable          " enable folding
 set foldlevelstart=0   " open most folds by default"
-" space open/closes folds
 nnoremap <space> za
 
 " }}}
@@ -44,7 +43,6 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " }}}
-
 
 " Custom functions {{{
 " allows cursor change in tmux mode
@@ -80,7 +78,6 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 " }}}
 
-
 " Leader shortcuts {{{
 
 let mapleader=","  " leader is comma
@@ -91,7 +88,6 @@ nnoremap <leader>l :call ToggleNumber()<CR>
 nnoremap <leader>u :GundoToggle<CR>
 
 " }}}
-
 
 " Backup {{{
 set backup
@@ -120,12 +116,6 @@ set laststatus=2
 
 " " }}}
 
-" " PLUGINS ---------------------------------------------------------------- {{{
-
-call pathogen#infect()                      " use pathogen
-
-" }}}
-
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
@@ -151,9 +141,6 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal shiftwidth=2
     autocmd BufEnter *.sh setlocal softtabstop=2
 augroup END
-
-
-
 
 " Section Name {{{
 " set number "This will be folded
