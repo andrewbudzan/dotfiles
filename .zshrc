@@ -83,8 +83,10 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias reload="source ~/.zshrc"
 alias colors='for code in {0..255}; do echo -e "\e[38;05;${code}m $code: test"; done'
-
+alias pandoc="/mnt/c/Program\ Files/Pandoc/pandoc.exe"
 
 eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+pyenv virtualenvwrapper_lazy
+

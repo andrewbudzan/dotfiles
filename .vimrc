@@ -97,7 +97,7 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 " }}}
 
-" " STATUS LINE ------------------------------------------------------------ {{{
+" Status line  {{{
 
 " Clear status line when vimrc is reloaded.
 set statusline=1
@@ -114,8 +114,9 @@ set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 " Show the status on the second to last line.
 set laststatus=2
 
-" " }}}
+" }}}
 
+" Autogroups {{{
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
@@ -141,6 +142,7 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal shiftwidth=2
     autocmd BufEnter *.sh setlocal softtabstop=2
 augroup END
+" }}}
 
 " Section Name {{{
 " set number "This will be folded
