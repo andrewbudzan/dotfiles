@@ -12,8 +12,6 @@ set argtextobj
 set easymotion
 set textobj-entire
 set ReplaceWithRegister
-set which-key
-set notimeout
 
 """ Plugin settings -------------------------
 let g:argtextobj_pairs="[:],(:),<:>"
@@ -30,6 +28,15 @@ set visualbell
 set ideajoin
 set ideastatusicon=gray
 set idearefactormode=keep
+
+""" IdeaVimExtension plugin enabling
+set keep-english-in-normal-and-restore-in-insert
+
+""" IdeaVim which-key enabling
+set which-key
+set notimeout
+let g:WhichKey_ShowVimActions = "true"
+let g:WhichKey_DefaultDelay = 0
 
 """ Mappings --------------------------------
 map <leader>f <Plug>(easymotion-s)
