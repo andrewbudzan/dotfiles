@@ -1,21 +1,15 @@
 [user]
-	name = andrii budzan
+	name = andrewbudzan
 	email = andrewbudzan@gmail.com
-	username = abudzan
 [core]
 	editor = vim
 [web]
 	browser = brave 
-[credential "https://github.com"]
-	helper =
-	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper =
 	helper = !/usr/bin/gh auth git-credential
 [alias]
 	hist = log --pretty=format:"%h | %s%d [%an]" --graph --date=short
 	logp = log --graph --pretty=format:'%Cred%h%Creset - %Cblue%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-[github]
-	user = andrewbudzan
 [init]
 	defaultBranch = main

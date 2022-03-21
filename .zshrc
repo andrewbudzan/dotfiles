@@ -1,8 +1,6 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+# Lines configured by zsh-newuser-install HISTFILE=~/.histfile
 HISTSIZE=5000
 SAVEHIST=10000
-
 setopt append_history           # append
 setopt hist_expire_dups_first
 setopt hist_ignore_all_dups     # no duplicate
@@ -71,6 +69,11 @@ export TIMER_PRECISION=3
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYENV="true"
 export WORKON_HOME=$HOME/.virtualvenvs
+
+# DataEngineering stack: environment variables
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export SPARK_HOME="$HOME/software/spark-3.0.3-bin-hadoop2.7"
+export HADOOP_HOME="$HOME/software/hadoop-2.7.0/"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
